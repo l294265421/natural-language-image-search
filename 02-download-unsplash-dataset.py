@@ -1,6 +1,7 @@
 import os
 import urllib.request
 from IPython.core.display import HTML, display
+from multiprocessing.pool import ThreadPool
 
 from pathlib import Path
 import pandas as pd
@@ -43,8 +44,6 @@ def download_photo(photo):
             # Catch the exception if the download fails for some reason
             print(f"Cannot download {photo_url}")
             pass
-
-from multiprocessing.pool import ThreadPool
 
 # Create the thread pool
 threads_count = 16

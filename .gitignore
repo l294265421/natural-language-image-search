@@ -145,10 +145,10 @@ unsplash-dataset/**/*.jpg
 unsplash-dataset/**/*.csv
 unsplash-dataset/**/*.npy
 
-data
-
 # Serverless
 .serverless
 node_modules
 
 .idea
+data
+unsplash-dataset
